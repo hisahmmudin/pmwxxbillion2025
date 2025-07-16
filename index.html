@@ -12,150 +12,152 @@
         }
         
         body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            color: white;
-            line-height: 1.4;
-            min-height: 100vh;
-            padding: 8px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #2c3e50;
+            line-height: 1.6;
+            padding: 20px;
         }
         
         .container {
-            max-width: 100%;
+            max-width: 1200px;
             margin: 0 auto;
         }
         
         .slide {
-            background: rgba(255,255,255,0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 15px;
-            padding: 18px;
-            margin-bottom: 25px;
-            border: 2px solid rgba(255,255,255,0.2);
-            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
-            position: relative;
-            page-break-inside: avoid;
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            border: 1px solid #e9ecef;
         }
         
         .slide-number {
             position: absolute;
-            top: -10px;
-            right: 15px;
-            background: #ffd700;
-            color: #1e3c72;
-            padding: 5px 10px;
-            border-radius: 15px;
-            font-size: 12px;
-            font-weight: bold;
+            top: 15px;
+            right: 25px;
+            background: #007bff;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
         }
         
         h1 {
-            font-size: 20px;
-            color: #ffd700;
+            font-size: 32px;
+            color: #1a365d;
             text-align: center;
-            margin-bottom: 15px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-            line-height: 1.3;
+            margin-bottom: 25px;
+            font-weight: 700;
+            line-height: 1.2;
         }
         
         h2 {
-            font-size: 18px;
-            color: #ffd700;
-            margin-bottom: 12px;
+            font-size: 28px;
+            color: #2d3748;
+            margin-bottom: 20px;
             text-align: center;
-            line-height: 1.3;
+            font-weight: 600;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 10px;
         }
         
         h3 {
-            font-size: 15px;
-            color: #4CAF50;
-            margin-bottom: 10px;
-            font-weight: bold;
+            font-size: 22px;
+            color: #2563eb;
+            margin-bottom: 15px;
+            font-weight: 600;
+            margin-top: 25px;
         }
         
         h4 {
-            font-size: 14px;
-            color: #2196F3;
-            margin-bottom: 8px;
-            font-weight: bold;
-        }
-        
-        h5 {
-            font-size: 13px;
-            color: #FF9800;
-            margin-bottom: 6px;
-            font-weight: bold;
+            font-size: 18px;
+            color: #1e40af;
+            margin-bottom: 12px;
+            font-weight: 600;
         }
         
         p, li {
-            font-size: 12px;
-            line-height: 1.5;
-            margin-bottom: 6px;
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 10px;
+            color: #4a5568;
         }
         
         .highlight {
-            background: rgba(255,215,0,0.2);
-            padding: 12px;
-            border-radius: 10px;
-            border: 2px solid #ffd700;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
             text-align: center;
-            margin: 12px 0;
+            margin: 25px 0;
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
         }
         
         .highlight .big-number {
-            font-size: 24px;
-            font-weight: bold;
-            color: #ffd700;
+            font-size: 36px;
+            font-weight: 700;
             display: block;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
         }
         
         .highlight .label {
-            font-size: 12px;
-            color: white;
-            line-height: 1.3;
+            font-size: 18px;
+            line-height: 1.5;
+            opacity: 0.95;
         }
         
         .stats-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 8px;
-            margin: 12px 0;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 25px 0;
         }
         
         .stats-grid-3 {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 6px;
-            margin: 12px 0;
+            gap: 20px;
+            margin: 25px 0;
         }
         
         .stats-grid-4 {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 6px;
-            margin: 12px 0;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 25px 0;
         }
         
         .stat-box {
-            background: rgba(255,255,255,0.1);
-            padding: 10px;
-            border-radius: 8px;
+            background: #f8fafc;
+            padding: 25px;
+            border-radius: 12px;
             text-align: center;
-            border: 1px solid rgba(255,255,255,0.3);
+            border: 2px solid #e2e8f0;
+            transition: all 0.3s ease;
+        }
+        
+        .stat-box:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            border-color: #007bff;
         }
         
         .stat-number {
-            font-size: 18px;
-            font-weight: bold;
-            color: #4CAF50;
-            margin-bottom: 3px;
+            font-size: 28px;
+            font-weight: 700;
+            color: #059669;
+            margin-bottom: 8px;
+            display: block;
         }
         
         .stat-label {
-            font-size: 10px;
-            color: #ccc;
-            line-height: 1.2;
+            font-size: 14px;
+            color: #6b7280;
+            line-height: 1.4;
+            font-weight: 500;
         }
         
         ul {
@@ -164,161 +166,180 @@
         }
         
         li {
-            padding-left: 18px;
+            padding: 8px 0 8px 30px;
             position: relative;
-            margin-bottom: 6px;
+            margin-bottom: 8px;
         }
         
         li:before {
             content: "✓";
             position: absolute;
             left: 0;
-            color: #4CAF50;
-            font-weight: bold;
-            font-size: 12px;
+            color: #10b981;
+            font-weight: 700;
+            font-size: 18px;
         }
         
         .partner-box {
-            background: rgba(255,255,255,0.15);
-            padding: 12px;
-            border-radius: 10px;
-            margin: 8px 0;
-            border: 2px solid #ffd700;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 20px 0;
+            box-shadow: 0 8px 25px rgba(245, 87, 108, 0.3);
         }
         
         .partner-name {
-            font-size: 14px;
-            font-weight: bold;
-            color: #ffd700;
+            font-size: 24px;
+            font-weight: 700;
             text-align: center;
-            margin-bottom: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .table-responsive {
+            overflow-x: auto;
+            margin: 25px 0;
         }
         
         .table-simple {
             width: 100%;
             border-collapse: collapse;
-            margin: 12px 0;
-            font-size: 9px;
+            margin: 20px 0;
+            font-size: 15px;
+            background: white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
         }
         
         .table-simple th,
         .table-simple td {
-            padding: 4px 2px;
+            padding: 15px 12px;
             text-align: center;
-            border: 1px solid rgba(255,255,255,0.3);
+            border-bottom: 1px solid #e2e8f0;
         }
         
         .table-simple th {
-            background: rgba(255,215,0,0.3);
-            color: #1e3c72;
-            font-weight: bold;
-            font-size: 9px;
+            background: #1e40af;
+            color: white;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        
+        .table-simple tr:hover {
+            background: #f8fafc;
         }
         
         .section-divider {
-            height: 3px;
-            background: linear-gradient(90deg, #ffd700, #4CAF50);
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
             border-radius: 2px;
+            margin: 30px 0;
+        }
+        
+        .timeline-item {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
             margin: 15px 0;
+            border-left: 5px solid #007bff;
+            transition: all 0.3s ease;
+        }
+        
+        .timeline-item:hover {
+            background: #e6f3ff;
+            transform: translateX(5px);
+        }
+        
+        .timeline-date {
+            font-weight: 700;
+            color: #1e40af;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        
+        .timeline-desc {
+            font-size: 15px;
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        
+        .detail-box {
+            background: #f8fafc;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 20px 0;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .success-box {
+            background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+            color: #065f46;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 20px 0;
+            box-shadow: 0 8px 25px rgba(132, 250, 176, 0.3);
+        }
+        
+        .success-title {
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 10px;
         }
         
         .navigation {
             position: fixed;
-            bottom: 15px;
-            right: 15px;
+            bottom: 25px;
+            right: 25px;
             z-index: 1000;
         }
         
         .nav-btn {
-            background: #ffd700;
-            color: #1e3c72;
+            background: #007bff;
+            color: white;
             border: none;
-            padding: 8px 12px;
-            border-radius: 20px;
-            font-weight: bold;
-            margin: 3px;
-            box-shadow: 0 4px 15px rgba(255,215,0,0.3);
-            font-size: 10px;
-        }
-        
-        .timeline-item {
-            background: rgba(255,255,255,0.1);
-            padding: 10px;
-            border-radius: 8px;
-            margin: 6px 0;
-            border-left: 4px solid #ffd700;
-        }
-        
-        .timeline-date {
-            font-weight: bold;
-            color: #ffd700;
-            font-size: 12px;
-        }
-        
-        .timeline-desc {
-            font-size: 11px;
-            margin-top: 3px;
-            line-height: 1.3;
-        }
-        
-        .detail-box {
-            background: rgba(255,255,255,0.1);
-            padding: 10px;
-            border-radius: 8px;
-            margin: 8px 0;
-            border: 1px solid rgba(255,255,255,0.3);
-        }
-        
-        .competitive-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 10px 0;
-            font-size: 8px;
-        }
-        
-        .competitive-table th,
-        .competitive-table td {
-            padding: 3px 2px;
-            text-align: center;
-            border: 1px solid rgba(255,255,255,0.3);
-        }
-        
-        .competitive-table th {
-            background: rgba(255,215,0,0.3);
-            color: #1e3c72;
-            font-weight: bold;
-        }
-        
-        .success-box {
-            background: rgba(76,175,80,0.2);
-            border: 2px solid #4CAF50;
-            padding: 12px;
-            border-radius: 10px;
-            margin: 12px 0;
-        }
-        
-        .success-title {
-            color: #4CAF50;
-            font-weight: bold;
+            padding: 12px 20px;
+            border-radius: 25px;
+            font-weight: 600;
+            margin: 5px;
+            box-shadow: 0 4px 15px rgba(0,123,255,0.3);
             font-size: 14px;
-            margin-bottom: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
         }
         
-        @media (max-width: 480px) {
-            h1 { font-size: 18px; }
-            h2 { font-size: 16px; }
-            h3 { font-size: 14px; }
-            .stats-grid-3 { grid-template-columns: 1fr; }
-            .stats-grid-4 { grid-template-columns: 1fr; }
-            .stat-number { font-size: 16px; }
-            .highlight .big-number { font-size: 20px; }
-            .slide { padding: 12px; }
+        .nav-btn:hover {
+            background: #0056b3;
+            transform: translateY(-2px);
         }
         
-        @media (max-width: 360px) {
-            .stats-grid { grid-template-columns: 1fr; }
-            .table-simple { font-size: 8px; }
-            .competitive-table { font-size: 7px; }
+        @media (max-width: 768px) {
+            .container { padding: 10px; }
+            .slide { padding: 25px; }
+            h1 { font-size: 26px; }
+            h2 { font-size: 22px; }
+            h3 { font-size: 18px; }
+            .stats-grid-3, .stats-grid-4 { grid-template-columns: 1fr; }
+            .stat-number { font-size: 24px; }
+            .highlight .big-number { font-size: 28px; }
+            .table-simple { font-size: 13px; }
+            .table-simple th, .table-simple td { padding: 10px 8px; }
+        }
+        
+        @media print {
+            body { background: white; }
+            .slide { 
+                background: white;
+                box-shadow: none;
+                border: 1px solid #ccc;
+                page-break-inside: avoid;
+                margin-bottom: 20px;
+            }
+            .navigation { display: none; }
+            .highlight, .partner-box, .success-box {
+                background: #f5f5f5 !important;
+                color: #333 !important;
+            }
         }
     </style>
 </head>
@@ -327,7 +348,7 @@
         
         <!-- Slide 1: Tajuk Utama & Overview -->
         <div class="slide">
-            <div class="slide-number">1/9</div>
+            <div class="slide-number">1/10</div>
             <h1>CADANGAN KERJASAMA STRATEGIK</h1>
             <div class="highlight">
                 <div class="big-number">PMW × BILLION GROUP</div>
@@ -336,20 +357,20 @@
             
             <div class="partner-box">
                 <div class="partner-name">PAK MAT WESTERN</div>
-                <p>• <strong>15 Tahun Kepakaran</strong> dalam frozen food Malaysia<br>
-                • <strong>RM70 Juta Jualan 2024</strong> track record terbukti<br>
-                • <strong>2,000+ Reseller Network</strong> aktif seluruh negara<br>
-                • <strong>11 Cawangan Strategik</strong> dari Johor ke Kedah<br>
-                • <strong>5.3M Social Media Followers</strong> viral marketing power</p>
+                <p><strong>15 Tahun Kepakaran</strong> dalam frozen food Malaysia<br>
+                <strong>RM70 Juta Jualan 2024</strong> track record terbukti<br>
+                <strong>2,000+ Reseller Network</strong> aktif seluruh negara<br>
+                <strong>11 Cawangan Strategik</strong> dari Johor ke Kedah<br>
+                <strong>5.3M Social Media Followers</strong> viral marketing power</p>
             </div>
             
             <div class="partner-box">
                 <div class="partner-name">BILLION GROUP</div>
-                <p>• <strong>53 Outlets Nationwide</strong> - Comprehensive retail network<br>
-                • <strong>40 Years Experience</strong> - Established market presence<br>
-                • <strong>"Jimat dan Meyakinkan Anda"</strong> - Trusted brand promise<br>
-                • <strong>Regional Dominance</strong> - Strong coverage across Malaysia<br>
-                • <strong>Mixed Format Excellence</strong> - Hypermarket to convenience stores</p>
+                <p><strong>53 Outlets Nationwide</strong> - Comprehensive retail network<br>
+                <strong>40 Years Experience</strong> - Established market presence<br>
+                <strong>"Jimat dan Meyakinkan Anda"</strong> - Trusted brand promise<br>
+                <strong>Regional Dominance</strong> - Strong coverage across Malaysia<br>
+                <strong>Mixed Format Excellence</strong> - Hypermarket to convenience stores</p>
             </div>
             
             <div class="highlight">
@@ -359,7 +380,7 @@
         
         <!-- Slide 2: Visi Misi Strategic -->
         <div class="slide">
-            <div class="slide-number">2/9</div>
+            <div class="slide-number">2/10</div>
             <h2>VISI & MISI KERJASAMA STRATEGIK</h2>
             
             <h3>🎯 VISI 2027</h3>
@@ -399,7 +420,7 @@
         
         <!-- Slide 3: Prestasi PMW Excellence -->
         <div class="slide">
-            <div class="slide-number">3/9</div>
+            <div class="slide-number">3/10</div>
             <h2>PRESTASI TERBUKTI PAK MAT WESTERN</h2>
             
             <h3>📊 Track Record Cemerlang 2024</h3>
@@ -435,44 +456,46 @@
             </div>
             
             <h3>🏪 Top Performance Centers</h3>
-            <table class="table-simple">
-                <tr>
-                    <th>Rank</th>
-                    <th>Location</th>
-                    <th>Performance</th>
-                    <th>Achievement</th>
-                </tr>
-                <tr style="background: rgba(255,215,0,0.3);">
-                    <td>🏆 1</td>
-                    <td>Johor Bahru</td>
-                    <td>RM8.71M</td>
-                    <td>Regional Champion</td>
-                </tr>
-                <tr>
-                    <td>🥈 2</td>
-                    <td>Puchong</td>
-                    <td>RM7.13M</td>
-                    <td>Urban Excellence</td>
-                </tr>
-                <tr>
-                    <td>🥉 3</td>
-                    <td>Sepang</td>
-                    <td>RM4.83M</td>
-                    <td>Strategic Growth</td>
-                </tr>
-                <tr>
-                    <td>⭐</td>
-                    <td>Duta Keramat</td>
-                    <td>RM4.04M</td>
-                    <td>Market Leader</td>
-                </tr>
-                <tr>
-                    <td>⭐</td>
-                    <td>Kuala Kangsar</td>
-                    <td>RM3.38M</td>
-                    <td>Regional Star</td>
-                </tr>
-            </table>
+            <div class="table-responsive">
+                <table class="table-simple">
+                    <tr>
+                        <th>Rank</th>
+                        <th>Location</th>
+                        <th>Performance</th>
+                        <th>Achievement</th>
+                    </tr>
+                    <tr style="background: rgba(255,215,0,0.2);">
+                        <td><strong>🏆 1</strong></td>
+                        <td>Johor Bahru</td>
+                        <td><strong>RM8.71M</strong></td>
+                        <td>Regional Champion</td>
+                    </tr>
+                    <tr>
+                        <td><strong>🥈 2</strong></td>
+                        <td>Puchong</td>
+                        <td><strong>RM7.13M</strong></td>
+                        <td>Urban Excellence</td>
+                    </tr>
+                    <tr>
+                        <td><strong>🥉 3</strong></td>
+                        <td>Sepang</td>
+                        <td><strong>RM4.83M</strong></td>
+                        <td>Strategic Growth</td>
+                    </tr>
+                    <tr>
+                        <td><strong>⭐ 4</strong></td>
+                        <td>Duta Keramat</td>
+                        <td><strong>RM4.04M</strong></td>
+                        <td>Market Leader</td>
+                    </tr>
+                    <tr>
+                        <td><strong>⭐ 5</strong></td>
+                        <td>Kuala Kangsar</td>
+                        <td><strong>RM3.38M</strong></td>
+                        <td>Regional Star</td>
+                    </tr>
+                </table>
+            </div>
             
             <h3>📱 Digital Marketing Supremacy</h3>
             <div class="stats-grid-3">
@@ -498,7 +521,7 @@
         
         <!-- Slide 4: Billion Network Excellence -->
         <div class="slide">
-            <div class="slide-number">4/9</div>
+            <div class="slide-number">4/10</div>
             <h2>KEKUATAN BILLION GROUP NETWORK</h2>
             
             <h3>🏢 Network Overview Excellence</h3>
@@ -566,22 +589,92 @@
                 <div class="big-number">PERFECT MARKET FIT</div>
                 <div class="label">PMW viral marketing power + Billion's 53 outlets + Loyal customer base = Unbeatable combination untuk market domination</div>
             </div>
+        </div>
+        
+        <!-- Slide 5: Digital Marketing Performance -->
+        <div class="slide">
+            <div class="slide-number">5/10</div>
+            <h2>DIGITAL MARKETING EXCELLENCE</h2>
             
-            <div class="stats-grid">
+            <h3>📱 PMW Social Media Dominance</h3>
+            <div class="stats-grid-3">
                 <div class="stat-box">
-                    <div class="stat-number">Geographic</div>
-                    <div class="stat-label">Expansion opportunity<br>New market access<br>Revenue diversification</div>
+                    <div class="stat-number">2.8M</div>
+                    <div class="stat-label">Facebook Followers<br>Family engagement<br>Community trust</div>
                 </div>
                 <div class="stat-box">
-                    <div class="stat-number">Synergy</div>
-                    <div class="stat-label">Perfect partnership<br>Complementary strengths<br>Mutual benefits</div>
+                    <div class="stat-number">1.5M</div>
+                    <div class="stat-label">TikTok Followers<br>Viral content daily<br>Massive reach</div>
                 </div>
+                <div class="stat-box">
+                    <div class="stat-number">950K</div>
+                    <div class="stat-label">Instagram Followers<br>Premium audience<br>Visual excellence</div>
+                </div>
+            </div>
+            
+            <h3>📊 Marketing Performance vs Industry</h3>
+            <div class="table-responsive">
+                <table class="table-simple">
+                    <tr>
+                        <th>Metric</th>
+                        <th>PMW Performance</th>
+                        <th>Industry Average</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Total Annual Views</strong></td>
+                        <td style="color: #059669; font-weight: bold;">524.7M</td>
+                        <td>50M</td>
+                        <td style="background: rgba(255,87,34,0.2); color: #dc2626; font-weight: bold;">🔥 10x better</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Engagement Rate</strong></td>
+                        <td style="color: #059669; font-weight: bold;">24.7%</td>
+                        <td>5.9%</td>
+                        <td style="background: rgba(255,87,34,0.2); color: #dc2626; font-weight: bold;">🔥 4x better</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Response Time</strong></td>
+                        <td style="color: #059669; font-weight: bold;">1.8 hours</td>
+                        <td>24 hours</td>
+                        <td style="background: rgba(255,87,34,0.2); color: #dc2626; font-weight: bold;">🔥 13x faster</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Viral Success</strong></td>
+                        <td style="color: #059669; font-weight: bold;">12 hits/year</td>
+                        <td>0.5 hits/year</td>
+                        <td style="background: rgba(255,87,34,0.2); color: #dc2626; font-weight: bold;">🔥 24x more</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Customer Rating</strong></td>
+                        <td style="color: #059669; font-weight: bold;">4.7/5</td>
+                        <td>4.2/5</td>
+                        <td style="background: rgba(16,185,129,0.2); color: #059669; font-weight: bold;">✅ Above average</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <h3>🌟 Celebrity Content Powerhouse</h3>
+            <div class="detail-box">
+                <h4>🎭 Viral Content Machine Excellence:</h4>
+                <ul>
+                    <li><strong>Una (TikTok Queen):</strong> 12.5M followers - Daily viral cooking content sensation</li>
+                    <li><strong>Eca (Instagram Star):</strong> 8.2M followers - Lifestyle & food authority</li>
+                    <li><strong>Content Performance:</strong> 2-5M views per video dengan 85% engagement rate</li>
+                    <li><strong>Celebrity Network:</strong> A-list collaborations dengan artis Malaysia</li>
+                    <li><strong>Conversion Excellence:</strong> 12% social-to-sales conversion vs 2% industry standard</li>
+                </ul>
+            </div>
+            
+            <div class="highlight">
+                <div class="big-number">UNMATCHED DIGITAL POWER</div>
+                <div class="label">5.3M social army + Celebrity influence + Performance metrics = Marketing dominance yang tidak ada competitors yang boleh lawan!</div>
             </div>
         </div>
         
-        <!-- Slide 5: Strategic Partnership Benefits -->
+        <!-- Slide 6: Strategic Partnership Benefits -->
         <div class="slide">
-            <div class="slide-number">5/9</div>
+            <div class="slide-number">6/10</div>
             <h2>MANFAAT STRATEGIK KERJASAMA</h2>
             
             <h3>🎯 Win-Win Excellence Model</h3>
@@ -634,118 +727,15 @@
                 </div>
             </div>
             
-            <h3>💰 Financial Impact Excellence</h3>
-            <div class="stats-grid">
-                <div class="stat-box">
-                    <div class="stat-number">Revenue</div>
-                    <div class="stat-label">Multiple growth streams<br>Sustainable expansion<br>Long-term prosperity</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-number">Market</div>
-                    <div class="stat-label">Leadership position<br>Category dominance<br>Competitive advantage</div>
-                </div>
-            </div>
-            
             <div class="success-box">
                 <div class="success-title">🎪 MARKET DOMINATION FORMULA</div>
                 <p>PMW's #1 social media power + Billion's proven retail network + Combined 55 years experience = Unstoppable market force!</p>
             </div>
         </div>
         
-        <!-- Slide 6: Digital Marketing Integration Excellence -->
+        <!-- Slide 7: Implementation Roadmap -->
         <div class="slide">
-            <div class="slide-number">6/9</div>
-            <h2>DIGITAL MARKETING INTEGRATION EXCELLENCE</h2>
-            
-            <h3>📱 PMW Social Media Dominance</h3>
-            <div class="stats-grid-3">
-                <div class="stat-box">
-                    <div class="stat-number">2.8M</div>
-                    <div class="stat-label">Facebook Followers<br>Family engagement<br>Community trust</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-number">1.5M</div>
-                    <div class="stat-label">TikTok Followers<br>Viral content daily<br>Massive reach</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-number">950K</div>
-                    <div class="stat-label">Instagram Followers<br>Premium audience<br>Visual excellence</div>
-                </div>
-            </div>
-            
-            <h3>🌟 Celebrity Content Powerhouse</h3>
-            <div class="detail-box">
-                <h4>🎭 Viral Content Machine Excellence:</h4>
-                <ul>
-                    <li><strong>Una (TikTok Queen):</strong> 12.5M followers - Daily viral cooking content sensation</li>
-                    <li><strong>Eca (Instagram Star):</strong> 8.2M followers - Lifestyle & food authority</li>
-                    <li><strong>Content Performance:</strong> 2-5M views per video dengan 85% engagement rate</li>
-                    <li><strong>Celebrity Network:</strong> A-list collaborations dengan artis Malaysia</li>
-                    <li><strong>Conversion Excellence:</strong> 12% social-to-sales conversion vs 2% industry standard</li>
-                </ul>
-            </div>
-            
-            <h3>🎯 Billion-Integrated Marketing Strategy</h3>
-            <div class="detail-box">
-                <h4>📍 Location-Based Excellence:</h4>
-                <ul>
-                    <li><strong>Store Spotlight:</strong> Daily content featuring specific Billion outlets</li>
-                    <li><strong>Live Shopping Events:</strong> Weekly live sessions from different locations</li>
-                    <li><strong>Customer Success Stories:</strong> Real testimonials from satisfied Billion shoppers</li>
-                    <li><strong>Product Demonstrations:</strong> Cooking shows using PMW products dari Billion</li>
-                    <li><strong>Exclusive Campaigns:</strong> Social media followers get special Billion offers</li>
-                </ul>
-            </div>
-            
-            <h3>📊 Marketing Performance vs Industry</h3>
-            <table class="table-simple" style="font-size: 10px; margin: 15px 0;">
-                <tr>
-                    <th>Metric</th>
-                    <th>PMW Performance</th>
-                    <th>Industry Average</th>
-                    <th>Status</th>
-                </tr>
-                <tr>
-                    <td><strong>Total Annual Views</strong></td>
-                    <td style="color: #4CAF50; font-weight: bold;">524.7M</td>
-                    <td>50M</td>
-                    <td style="background: rgba(255,87,34,0.3); color: #FF5722; font-weight: bold;">🔥 10x better</td>
-                </tr>
-                <tr>
-                    <td><strong>Engagement Rate</strong></td>
-                    <td style="color: #4CAF50; font-weight: bold;">24.7%</td>
-                    <td>5.9%</td>
-                    <td style="background: rgba(255,87,34,0.3); color: #FF5722; font-weight: bold;">🔥 4x better</td>
-                </tr>
-                <tr>
-                    <td><strong>Response Time</strong></td>
-                    <td style="color: #4CAF50; font-weight: bold;">1.8 hours</td>
-                    <td>24 hours</td>
-                    <td style="background: rgba(255,87,34,0.3); color: #FF5722; font-weight: bold;">🔥 13x faster</td>
-                </tr>
-                <tr>
-                    <td><strong>Viral Success</strong></td>
-                    <td style="color: #4CAF50; font-weight: bold;">12 hits/year</td>
-                    <td>0.5 hits/year</td>
-                    <td style="background: rgba(255,87,34,0.3); color: #FF5722; font-weight: bold;">🔥 24x more</td>
-                </tr>
-                <tr>
-                    <td><strong>Customer Rating</strong></td>
-                    <td style="color: #4CAF50; font-weight: bold;">4.7/5</td>
-                    <td>4.2/5</td>
-                    <td style="background: rgba(76,175,80,0.3); color: #4CAF50; font-weight: bold;">✅ Above average</td>
-                </tr>
-            </table>
-            
-            <div class="highlight">
-                <div class="big-number">UNMATCHED DIGITAL POWER</div>
-                <div class="label">5.3M social army + Celebrity influence + 53 Billion touchpoints = Marketing dominance yang tidak ada competitors yang boleh lawan!</div>
-            </div>
-        </div>
-        
-        <!-- Slide 7: Implementation Roadmap Excellence -->
-        <div class="slide">
-            <div class="slide-number">7/9</div>
+            <div class="slide-number">7/10</div>
             <h2>ROADMAP PELAKSANAAN EXCELLENCE</h2>
             
             <h3>🚀 Phase 1: Strategic Foundation (Month 1-3)</h3>
@@ -809,16 +799,82 @@
                     <div class="stat-label">RM150M Annual<br>Category dominance<br>Industry leadership</div>
                 </div>
             </div>
+        </div>
+        
+        <!-- Slide 8: Financial Excellence -->
+        <div class="slide">
+            <div class="slide-number">8/10</div>
+            <h2>PROJEKSI KEUANGAN EXCELLENCE</h2>
             
-            <div class="success-box">
-                <div class="success-title">🎯 SYSTEMATIC SUCCESS GUARANTEE</div>
-                <p>Proven implementation methodology dengan clear milestones, measurable KPIs, dan systematic approach untuk ensure 100% success delivery!</p>
+            <h3>📊 Revenue Growth Excellence</h3>
+            <div class="stats-grid-3">
+                <div class="stat-box">
+                    <div class="stat-number">Year 1</div>
+                    <div class="stat-label">RM110M Total<br>RM40M from Billion<br>Strong foundation</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">Year 2</div>
+                    <div class="stat-label">RM130M Total<br>RM50M from Billion<br>Momentum building</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">Year 3</div>
+                    <div class="stat-label">RM150M Total<br>RM60M from Billion<br>Market leadership</div>
+                </div>
+            </div>
+            
+            <h3>💰 Billion Channel Revenue Excellence</h3>
+            <div class="detail-box">
+                <h4>🎯 Strategic Revenue Streams (Year 3):</h4>
+                <ul>
+                    <li><strong>Core Frozen Products:</strong> RM40M (67%) - Main revenue driver</li>
+                    <li><strong>Premium Lines:</strong> RM12M (20%) - High-margin products</li>
+                    <li><strong>Seasonal Specials:</strong> RM5M (8%) - Festival & celebration items</li>
+                    <li><strong>Social Commerce:</strong> RM3M (5%) - Direct social media orders</li>
+                    <li><strong>Total Billion Channel:</strong> RM60M annually (RM5M monthly average)</li>
+                </ul>
+            </div>
+            
+            <h3>📈 Profitability Excellence Model</h3>
+            <div class="stats-grid-4">
+                <div class="stat-box">
+                    <div class="stat-number">26%</div>
+                    <div class="stat-label">Gross Margin<br>Excellent pricing<br>Premium positioning</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">18%</div>
+                    <div class="stat-label">Net Margin<br>RM27M profit<br>Outstanding returns</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">20 months</div>
+                    <div class="stat-label">ROI Payback<br>Fast recovery<br>Excellent returns</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">30%</div>
+                    <div class="stat-label">YoY Growth<br>Sustainable rate<br>Long-term success</div>
+                </div>
+            </div>
+            
+            <h3>💡 Investment Excellence Framework</h3>
+            <div class="detail-box">
+                <h4>Smart Capital Allocation:</h4>
+                <ul>
+                    <li><strong>Inventory Investment:</strong> RM6M - Optimal stock levels untuk 53 outlets</li>
+                    <li><strong>Marketing Excellence:</strong> RM4M - Social campaigns & promotions</li>
+                    <li><strong>Technology Innovation:</strong> RM3M - Digital integration systems</li>
+                    <li><strong>Working Capital:</strong> RM4M - Operational excellence fund</li>
+                    <li><strong>Total Investment:</strong> RM17M - Outstanding ROI potential</li>
+                </ul>
+            </div>
+            
+            <div class="highlight">
+                <div class="big-number">FINANCIAL EXCELLENCE GUARANTEED</div>
+                <div class="label">RM150M revenue + 18% net margin + 20-month payback = Outstanding investment opportunity dengan proven success formula!</div>
             </div>
         </div>
-                
-        <!-- Slide 8: Competitive Excellence -->
+        
+        <!-- Slide 9: Competitive Excellence -->
         <div class="slide">
-            <div class="slide-number">8/9</div>
+            <div class="slide-number">9/10</div>
             <h2>COMPETITIVE EXCELLENCE ANALYSIS</h2>
             
             <h3>💪 Unmatched Competitive Advantages</h3>
@@ -833,43 +889,45 @@
             </div>
             
             <h3>🏆 vs Major Competitors Excellence</h3>
-            <table class="competitive-table">
-                <tr>
-                    <th>Factor</th>
-                    <th>PMW + Billion</th>
-                    <th>QL Foods</th>
-                    <th>Ayamas</th>
-                    <th>Others</th>
-                </tr>
-                <tr>
-                    <td>Social Media</td>
-                    <td style="background: rgba(76,175,80,0.3);">5.3M DOMINANCE</td>
-                    <td style="background: rgba(255,87,34,0.3);">200K Limited</td>
-                    <td style="background: rgba(255,87,34,0.3);">150K Weak</td>
-                    <td style="background: rgba(255,87,34,0.3);">Minimal</td>
-                </tr>
-                <tr>
-                    <td>Celebrity Power</td>
-                    <td style="background: rgba(76,175,80,0.3);">UNA + ECA STARS</td>
-                    <td style="background: rgba(255,87,34,0.3);">None</td>
-                    <td style="background: rgba(255,87,34,0.3);">Limited</td>
-                    <td style="background: rgba(255,87,34,0.3);">None</td>
-                </tr>
-                <tr>
-                    <td>Retail Network</td>
-                    <td style="background: rgba(76,175,80,0.3);">2,053 OUTLETS</td>
-                    <td style="background: rgba(255,152,0,0.3);">Corporate</td>
-                    <td style="background: rgba(255,152,0,0.3);">Limited</td>
-                    <td style="background: rgba(255,152,0,0.3);">Regional</td>
-                </tr>
-                <tr>
-                    <td>Innovation</td>
-                    <td style="background: rgba(76,175,80,0.3);">SOCIAL COMMERCE</td>
-                    <td style="background: rgba(255,87,34,0.3);">Traditional</td>
-                    <td style="background: rgba(255,87,34,0.3);">Traditional</td>
-                    <td style="background: rgba(255,87,34,0.3);">Traditional</td>
-                </tr>
-            </table>
+            <div class="table-responsive">
+                <table class="table-simple">
+                    <tr>
+                        <th>Factor</th>
+                        <th>PMW + Billion</th>
+                        <th>QL Foods</th>
+                        <th>Ayamas</th>
+                        <th>Others</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Social Media</strong></td>
+                        <td style="background: rgba(16,185,129,0.2); color: #059669; font-weight: bold;">5.3M DOMINANCE</td>
+                        <td style="background: rgba(220,38,38,0.2); color: #dc2626;">200K Limited</td>
+                        <td style="background: rgba(220,38,38,0.2); color: #dc2626;">150K Weak</td>
+                        <td style="background: rgba(220,38,38,0.2); color: #dc2626;">Minimal</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Celebrity Power</strong></td>
+                        <td style="background: rgba(16,185,129,0.2); color: #059669; font-weight: bold;">UNA + ECA STARS</td>
+                        <td style="background: rgba(220,38,38,0.2); color: #dc2626;">None</td>
+                        <td style="background: rgba(220,38,38,0.2); color: #dc2626;">Limited</td>
+                        <td style="background: rgba(220,38,38,0.2); color: #dc2626;">None</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Retail Network</strong></td>
+                        <td style="background: rgba(16,185,129,0.2); color: #059669; font-weight: bold;">2,053 OUTLETS</td>
+                        <td style="background: rgba(245,158,11,0.2); color: #d97706;">Corporate</td>
+                        <td style="background: rgba(245,158,11,0.2); color: #d97706;">Limited</td>
+                        <td style="background: rgba(245,158,11,0.2); color: #d97706;">Regional</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Innovation</strong></td>
+                        <td style="background: rgba(16,185,129,0.2); color: #059669; font-weight: bold;">SOCIAL COMMERCE</td>
+                        <td style="background: rgba(220,38,38,0.2); color: #dc2626;">Traditional</td>
+                        <td style="background: rgba(220,38,38,0.2); color: #dc2626;">Traditional</td>
+                        <td style="background: rgba(220,38,38,0.2); color: #dc2626;">Traditional</td>
+                    </tr>
+                </table>
+            </div>
             
             <h3>🛡️ Sustainable Excellence Moats</h3>
             <div class="stats-grid-4">
@@ -891,27 +949,15 @@
                 </div>
             </div>
             
-            <h3>⚔️ Market Leadership Excellence</h3>
-            <div class="detail-box">
-                <h4>🎯 Competitive Destruction Strategy:</h4>
-                <ul>
-                    <li><strong>Social Media Warfare:</strong> 5.3M followers overwhelm competitor messaging</li>
-                    <li><strong>Network Supremacy:</strong> 2,053 total outlets vs competitors' limited reach</li>
-                    <li><strong>Price-Quality Leadership:</strong> Premium products at competitive prices</li>
-                    <li><strong>Innovation Advantage:</strong> Social commerce features competitors cannot match</li>
-                    <li><strong>Celebrity Endorsement:</strong> Una/Eca exclusive content creates unbeatable brand equity</li>
-                </ul>
-            </div>
-            
             <div class="highlight">
                 <div class="big-number">MARKET DOMINATION FORMULA</div>
                 <div class="label">PMW Excellence + Billion Network + 5.3M Social Army + Celebrity Power = Competitive advantage yang MUSTAHIL untuk competitors lawan!</div>
             </div>
         </div>
         
-        <!-- Slide 9: Success Guarantee & Call to Action -->
+        <!-- Slide 10: Success Guarantee -->
         <div class="slide">
-            <div class="slide-number">9/9</div>
+            <div class="slide-number">10/10</div>
             <h2>SUCCESS GUARANTEE & CALL TO ACTION</h2>
             
             <h3>🎯 Partnership Excellence Summary</h3>
@@ -945,8 +991,9 @@
                 <p>✓ PMW proven track record dengan RM70M baseline revenue<br>
                 ✓ Billion 40 years market presence dengan loyal customer base<br>
                 ✓ 5.3M social media followers provide unmatched marketing power<br>
+                ✓ Combined 55 years industry experience dan expertise<br>
                 ✓ First mover advantage dalam social commerce integration<br>
-                ✓ Unbeatable competitive yang competitors cannot replicate</p>
+                ✓ Unbeatable competitive moats yang competitors cannot replicate</p>
             </div>
             
             <h3>🚀 Immediate Success Actions</h3>
@@ -1008,16 +1055,7 @@
     
     <script>
         // Navigation functionality
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-        
-        let slideCount = 9;
+        let slideCount = 10;
         let currentSlideVisible = 1;
         
         function updateSlideIndicator() {
@@ -1054,7 +1092,7 @@
                     currentSlide++;
                 }, 15000);
                 
-                document.body.style.boxShadow = 'inset 0 0 20px rgba(255,215,0,0.3)';
+                document.body.style.boxShadow = 'inset 0 0 20px rgba(0,123,255,0.3)';
             } else {
                 clearInterval(autoScrollInterval);
                 document.body.style.boxShadow = '';
@@ -1142,16 +1180,6 @@
         window.addEventListener('scroll', () => {
             ticking = false;
             requestTick();
-        });
-        
-        window.addEventListener('beforeprint', function() {
-            document.body.style.background = 'white';
-            document.body.style.color = 'black';
-        });
-        
-        window.addEventListener('afterprint', function() {
-            document.body.style.background = '';
-            document.body.style.color = '';
         });
     </script>
 </body>
